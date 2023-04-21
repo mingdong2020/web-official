@@ -1,0 +1,10 @@
+@import '../../styles/index.scss';
+.loading-box {
+  width: 100%;
+  height: 2px;
+  .loading-line {
+    width: 50%;
+    height: 2px;
+    background-color: color(red-7);
+  }
+}

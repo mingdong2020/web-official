@@ -1,0 +1,37 @@
+@import '../../../styles/index.scss';
+.manage-box {
+  h1 {
+    @include title-h1;
+  }
+  table {
+    @include margin-auto;
+    @include margin(top, large);
+    @include margin(bottom, large);
+    width: torem(832px);
+    background-color: color(gray-2);
+    border-collapse: collapse;
+    overflow: hidden;
+    thead {
+      td {
+        padding: torem(6px) torem(10px);
+        @include title-h6;
+        @include border();
+        text-align: center;
+      }
+      td:nth-child(3) {
+        text-align: left;
+      }
+    }
+    tr {
+      td {
+        padding: torem(6px) torem(10px);
+        @include text-small;
+        @include border();
+        text-align: center;
+      }
+      td:nth-child(3) {
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import '../../styles/index.scss';
+.finance-box {
+  .finance-firm {
+    @include margin-auto;
+    @include margin(top, large);
+    width: torem(888px);
+    @include flex-row;
+    .firm-image {
+      flex: 4;
+      @include margin(top, large);
+      @include margin(right);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .firm-box {
+      flex: 3;
+      .firm-title {
+        @include margin-auto;
+        @include margin(top, large);
+        @include text-middle;
+        text-indent: 2em;
+      }
+      .firm-tips {
+        @include margin-auto;
+        @include margin(top);
+        @include text-middle;
+        text-indent: 2em;
+        color: color(red-7);
+        font-weight: 500;
+      }
+    }
+  }
+  .finance-choose {
+    @include margin-auto;
+    @include margin(top, large);
+    @include margin(bottom);
+    width: torem(888px);
+    @include flex-row;
+    @include border(top);
+    .finance-article {
+      @include margin(top);
+      .article-head {
+        p {
+          @include margin(top, small);
+          @include text-large;
+          color: color(red-7);
+          font-weight: 500;
+          text-align: center;
+        }
+      }
+      .article-body {
+        @include margin(top);
+        @include text-middle;
+        text-indent: 2em;
+      }
+    }
+  }
+  .finance-over {
+    @include margin-auto;
+    @include margin(bottom, large);
+    @include margin(top, large);
+    @include border(top);
+    width: torem(888px);
+    h1 {
+      @include title-h1;
+      @include margin(top);
+    }
+    .over-tips {
+      @include margin(top);
+      @include text-middle;
+      text-indent: 2em;
+    }
+    .over-list {
+      @include flex-row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .over-item {
+        @include margin(top, large);
+        .image-box {
+          border-radius: 3px;
+          overflow: hidden;
+        }
+        div {
+          @include margin(top, small);
+          @include text-middle;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

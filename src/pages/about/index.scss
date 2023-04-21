@@ -1,0 +1,102 @@
+@import '../../styles/index.scss';
+.about-box {
+  .about-choice {
+    background: url('../../image/ChoiceBox.png') no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden;
+    h1 {
+      @include title-h1;
+    }
+    .choice-box {
+      @include margin-auto;
+      @include margin(top);
+      width: torem(988px);
+      @include flex-between;
+      align-items: flex-end;
+      .choice-item {
+        flex: 1;
+        @include flex-column;
+        padding: 0 torem(12px);
+        border-top: 3px solid transparent;
+        h3 {
+          @include title-h3;
+        }
+        .choice-text {
+          @include margin(top, small);
+          @include margin(bottom, small);
+          @include text-small;
+          text-indent: 2em;
+        }
+      }
+      .choice-active {
+        background: url('../../image/ChoiceItem.png') no-repeat;
+        background-size: 100% auto;
+        background-position: bottom center;
+        background-color: color(gray-1);
+        border-top: 3px solid color(red-7);
+        h3 {
+          color: color(red-7);
+        }
+      }
+    }
+  }
+  .about-company {
+    h1 {
+      @include title-h1;
+    }
+    .company-box {
+      @include flex-row;
+      @include margin-auto;
+      @include margin(top, large);
+      @include margin(bottom, large);
+      width: torem(988px);
+      .company-map {
+        flex: 1;
+        height: torem(274px);
+        z-index: 666;
+      }
+      .company-msg {
+        flex: 1;
+        @include margin(left);
+        .company-core {
+          @include flex-column;
+          .core-item {
+            @include flex-column;
+            @include margin(bottom, small);
+            h5 {
+              @include title-h5;
+              margin: 0;
+              text-align: left;
+              line-height: 24px;
+              color: color(red-7);
+            }
+            .core-text {
+              @include margin(top, small);
+              @include text-small;
+            }
+          }
+        }
+        .company-tips {
+          @include border(top);
+          @include margin(top);
+          .tips-item {
+            @include flex-row;
+            @include margin(top, small);
+            .tips-image {
+              @include margin(right, small);
+              width: torem(16px);
+              height: torem(16px);
+            }
+            .tips-text {
+              @include text-small;
+            }
+          }
+          .tips-item:first-child {
+            @include margin(top);
+          }
+        }
+      }
+    }
+  }
+}

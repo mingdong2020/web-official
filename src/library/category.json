@@ -1,0 +1,164 @@
+{
+  "corr": {
+    "name": "增值电信业务 >>",
+    "list": [
+      {
+        "id": 1,
+        "check": true,
+        "title": "ICP许可证",
+        "image": "coor01.png",
+        "text": "信息服务业务经营许可证"
+      },
+      {
+        "id": 2,
+        "check": false,
+        "title": "SP许可证",
+        "image": "coor02.png",
+        "text": "移动信息服务业务经营许可证"
+      },
+      {
+        "id": 3,
+        "check": false,
+        "title": "IDC许可证",
+        "image": "coor03.png",
+        "text": "因特网数据中心处理业务"
+      },
+      {
+        "id": 4,
+        "check": false,
+        "title": "ISP许可证",
+        "image": "coor04.png",
+        "text": "互联网接入服务业务"
+      },
+      {
+        "id": 5,
+        "check": false,
+        "title": "呼叫中心许可证",
+        "image": "coor05.png",
+        "text": "呼叫中心业务"
+      },
+      {
+        "id": 6,
+        "check": false,
+        "title": "电信码号",
+        "image": "coor06.png",
+        "text": "全网码号(95) / 地网码号"
+      },
+      {
+        "id": 7,
+        "check": false,
+        "title": "EDI许可证",
+        "image": "coor07.png",
+        "text": "在线数据处理与交易处理业务"
+      },
+      {
+        "id": 8,
+        "check": false,
+        "title": "IP-VPN许可证",
+        "image": "coor08.png",
+        "text": "虚拟专用网络IP-VPN"
+      }
+    ]
+  },
+  "bumf": {
+    "name": "资质许可业务 >>",
+    "list": [
+      {
+        "id": 1,
+        "check": true,
+        "title": "保健食品经营许可证",
+        "image": "bumf01.png",
+        "text": "从事保健食品生产、经营活动"
+      },
+      {
+        "id": 2,
+        "check": false,
+        "title": "食品经营许可证",
+        "image": "bumf02.png",
+        "text": "从事食品经营活动"
+      },
+      {
+        "id": 3,
+        "check": false,
+        "title": "绿色食品办理",
+        "image": "bumf03.png",
+        "text": "绿色食品质量证明标志"
+      },
+      {
+        "id": 4,
+        "check": false,
+        "title": "定型包装食品审批",
+        "image": "bumf04.png",
+        "text": "定型包装食品卫生许可证"
+      },
+      {
+        "id": 5,
+        "check": false,
+        "title": "营业性演出许可证",
+        "image": "bumf05.png",
+        "text": "以盈利为目的的演出活动"
+      },
+      {
+        "id": 6,
+        "check": false,
+        "title": "危化品许可证",
+        "image": "bumf06.png",
+        "text": "从事危险化学品经营需申请"
+      },
+      {
+        "id": 7,
+        "check": false,
+        "title": "医疗器械许可证",
+        "image": "bumf07.png",
+        "text": "医疗器械企业需申请"
+      }
+    ]
+  },
+  "wire": {
+    "name": "互联网服务 >>",
+    "list": [
+      {
+        "id": 1,
+        "check": true,
+        "title": "文化经营许可证",
+        "image": "wire01.png",
+        "text": "互联网文化产品的盈利服务"
+      },
+      {
+        "id": 2,
+        "check": false,
+        "title": "游戏版号",
+        "image": "wire02.png",
+        "text": "游戏软件电子出版物号"
+      },
+      {
+        "id": 3,
+        "check": false,
+        "title": "互联网医疗保健",
+        "image": "wire03.png",
+        "text": "网络医疗机构服务活动"
+      },
+      {
+        "id": 4,
+        "check": false,
+        "title": "网络视听许可证",
+        "image": "wire04.png",
+        "text": "各类电子设备的节目集成运营"
+      },
+      {
+        "id": 5,
+        "check": false,
+        "title": "广播电视节目许可证",
+        "image": "wire05.png",
+        "text": "从事电影、综艺等节目制作"
+      },
+      {
+        "id": 6,
+        "check": false,
+        "title": "互联网出版",
+        "image": "wire06.png",
+        "text": "从事互联网文化活动的盈利行为"
+      }
+    ]
+  }
+}

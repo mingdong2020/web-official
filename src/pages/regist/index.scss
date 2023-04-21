@@ -1,0 +1,307 @@
+@import '../../styles/index.scss';
+.regist-box {
+  .regist-point {
+    position: relative;
+    @include margin-auto;
+    @include margin(top, large);
+    width: torem(1088px);
+    .regist-ground {
+      width: 100%;
+    }
+    .regist-panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      h1 {
+        @include title-h1;
+      }
+      .regist-text {
+        @include flex-column;
+        width: torem(488px);
+        @include margin-auto;
+        margin-top: torem(60px);
+        span {
+          font-size: font(size-13);
+          font-weight: weight(weight-normal);
+          color: color(gray-1);
+        }
+        span:nth-child(1) {
+          margin: 0 0 0 torem(90px);
+          width: torem(220px);
+          text-indent: 6em;
+        }
+        span:nth-child(2) {
+          margin: torem(-30px) 0 0 torem(368px);
+          width: torem(140px);
+        }
+        span:nth-child(3) {
+          margin: torem(10px) 0 0 torem(-10px);
+          width: torem(130px);
+        }
+        span:nth-child(4) {
+          margin: torem(-30px) 0 0 torem(332px);
+          width: torem(150px);
+          text-indent: 5em;
+        }
+      }
+    }
+  }
+  .regist-process {
+    h1 {
+      @include title-h1;
+    }
+    .process-box {
+      position: relative;
+      .process-context {
+        width: 100%;
+        height: torem(300px);
+        @include flex-column;
+        align-items: center;
+        .process-item {
+          margin: torem(20px) 0 0 0;
+          width: torem(720px);
+          @include flex-between;
+          @include border(bottom);
+          span {
+            @include text-middle;
+            em {
+              font-size: font(size-16);
+              font-weight: weight(weight-heavy);
+              color: color(red-7);
+            }
+          }
+        }
+        .process-item:nth-child(1) {
+          margin: torem(33px) 0 0 0;
+          span {
+            &:first-child {
+              padding: 0 0 0 torem(218px);
+            }
+            &:last-child {
+              padding: 0 torem(180px) 0 0;
+            }
+          }
+        }
+        .process-item:nth-child(2) {
+          span {
+            &:first-child {
+              padding: 0 0 0 torem(94px);
+            }
+            &:last-child {
+              padding: 0 torem(118px) 0 0;
+            }
+          }
+        }
+        .process-item:nth-child(3) {
+          span {
+            &:first-child {
+              padding: 0 0 0 torem(124px);
+            }
+            &:last-child {
+              padding: 0 torem(58px) 0 0;
+            }
+          }
+        }
+        .process-item:nth-child(4) {
+          span {
+            &:first-child {
+              padding: 0 0 0 torem(38px);
+            }
+            &:last-child {
+              padding: 0 torem(70px) 0 0;
+            }
+          }
+        }
+        .process-item:nth-child(5) {
+          span {
+            &:first-child {
+              padding: 0 0 0 torem(98px);
+            }
+            &:last-child {
+              padding: 0 torem(-2px) 0 0;
+            }
+          }
+        }
+        .process-item:nth-child(6) {
+          span {
+            &:first-child {
+              padding: 0 0 0 torem(158px);
+            }
+            &:last-child {
+              padding: 0 torem(140px) 0 0;
+            }
+          }
+        }
+      }
+      .process-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: torem(240px);
+        height: torem(240px);
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: color(gray-1);
+        .circle-fault {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: torem(210px);
+          height: torem(210px);
+          .circle-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: torem(200px);
+            height: torem(200px);
+            border-radius: 50%;
+            background-color: color(gray-5);
+          }
+          .circle-tx {
+            position: absolute;
+            top: torem(10px);
+            left: torem(10px);
+            width: torem(200px);
+            height: torem(200px);
+            border-radius: 50%;
+            border: 3px solid color(red-7);
+            overflow: hidden;
+            @include flex-column-center;
+            background: url('../../image/RegistStep.png');
+            background-size: 100%;
+            background-position: top center;
+            background-color: color(gray-1);
+            h5 {
+              @include title-h1;
+              font-size: font(size-30);
+              color: color(red-7);
+              margin: torem(56px) 0 0 0;
+            }
+            div {
+              padding: torem(4px);
+              @include margin(top, large);
+              width: 100%;
+              font-size: font(size-18);
+              font-weight: weight(weight-heavy);
+              color: color(gray-1);
+              text-align: center;
+              background-color: color(red-7);
+            }
+          }
+        }
+      }
+    }
+  }
+  .regist-material {
+    @include margin(top, large);
+    @include margin(bottom, large);
+    h1 {
+      @include title-h1;
+    }
+    .material-box {
+      .material-item {
+        @include margin-auto;
+        @include margin(top, large);
+        width: torem(788px);
+        @include border(right);
+        @include border(bottom);
+        overflow: hidden;
+        @include flex-row;
+        .material-step {
+          width: torem(124px);
+          height: torem(124px);
+          @include flex-center;
+          .step-box {
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            @include flex-center;
+            @include title-h1;
+            font-size: font(size-46);
+            margin: 0;
+            color: color(gray-1);
+            border: 2px solid color(gray-1);
+            background-color: color(gray-1);
+          }
+        }
+        .material-context {
+          padding: torem(6px) torem(10px);
+          h3 {
+            @include title-h3;
+            margin: 0;
+            margin: torem(4px) 0;
+            text-align: left;
+          }
+          .material-list {
+            width: torem(648px);
+            span {
+              @include text-small;
+            }
+          }
+        }
+      }
+      .material-item:nth-child(1) {
+        border-top: 2px solid color(red-7);
+        .material-step {
+          background-color: color(red-7);
+          .step-box {
+            background: url('../../image/RegistIn.png') no-repeat;
+            background-size: 72%;
+            background-position: center center;
+            background-color: color(gray-1);
+          }
+        }
+        .material-context {
+          h3 {
+            em {
+              font-style: normal;
+              color: color(red-7);
+            }
+          }
+        }
+      }
+      .material-item:nth-child(2) {
+        border-top: 2px solid color(lime-7);
+        .material-step {
+          background-color: color(lime-7);
+          .step-box {
+            background: url('../../image/RegistOut.png') no-repeat;
+            background-size: 72%;
+            background-position: center center;
+            background-color: color(gray-1);
+          }
+        }
+        .material-context {
+          h3 {
+            em {
+              font-style: normal;
+              color: color(lime-7);
+            }
+          }
+        }
+      }
+      .material-item:nth-child(3) {
+        border-top: 2px solid color(green-7);
+        .material-step {
+          background-color: color(green-7);
+          .step-box {
+            background: url('../../image/RegistAnd.png') no-repeat;
+            background-size: 72%;
+            background-position: center center;
+            background-color: color(gray-1);
+          }
+        }
+        .material-context {
+          h3 {
+            em {
+              font-style: normal;
+              color: color(green-7);
+            }
+          }
+        }
+      }
+    }
+  }
+}

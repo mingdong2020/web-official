@@ -1,0 +1,29 @@
+@import '../../../styles/index.scss';
+.industry-box {
+  h1 {
+    @include title-h1;
+  }
+  .industry-panel {
+    @include margin-auto;
+    @include margin(top, large);
+    @include margin(bottom, large);
+    padding: torem(18px) torem(22px);
+    width: torem(788px);
+    background-color: color(gray-3);
+    border-radius: 5px;
+    overflow: hidden;
+    .industry-item {
+      @include text-small;
+      @include margin(top);
+      h6 {
+        @include title-h6;
+      }
+      span {
+        display: inline-block;
+        margin-top: torem(4px);
+        @include text-small;
+        text-indent: 2em;
+      }
+    }
+  }
+}

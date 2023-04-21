@@ -1,0 +1,104 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@mixin title-h1 {
+  margin-top: torem(68px);
+  font-size: font(size-22);
+  font-weight: weight(weight-heavy);
+  color: color(gray-10);
+  text-align: center;
+}
+@mixin title-h3 {
+  margin-top: torem(28px);
+  font-size: font(size-18);
+  font-weight: weight(weight-heavy);
+  color: color(gray-10);
+  text-align: center;
+}
+@mixin title-h5 {
+  margin-top: torem(8px);
+  font-size: font(size-16);
+  font-weight: weight(weight-heavy);
+  color: color(gray-9);
+  text-align: center;
+}
+@mixin title-h6 {
+  margin-top: torem(8px);
+  font-size: font(size-12);
+  font-weight: weight(weight-heavy);
+  color: color(gray-9);
+}
+@mixin text-large {
+  font-size: font(size-16);
+  font-weight: weight(weight-normal);
+  color: color(gray-12);
+}
+@mixin text-middle {
+  font-size: font(size-14);
+  font-weight: weight(weight-normal);
+  color: color(gray-12);
+}
+@mixin text-small {
+  font-size: font(size-12);
+  font-weight: weight(weight-normal);
+  color: color(gray-10);
+}
+@mixin border($type:null) {
+  @if $type == top {
+    border-top: 1px solid color(gray-5);
+  } @else if $type == bottom {
+    border-bottom: 1px solid color(gray-5);
+  } @else if $type == left {
+    border-left: 1px solid color(gray-5);
+  } @else if $type == right {
+    border-right: 1px solid color(gray-5);
+  } @else {
+    border: 1px solid color(gray-5);
+  }
+}
+@mixin margin-auto {
+  margin: 0 auto;
+}
+@mixin margin($type, $size:null) {
+  @if $type == top {
+    margin-top: size($size);
+  } @else if $type == bottom {
+    margin-bottom: size($size);
+  } @else if $type == left {
+    margin-left: size($size);
+  } @else if $type == right {
+    margin-right: size($size);
+  } @else {
+    margin: size($size);
+  }
+}

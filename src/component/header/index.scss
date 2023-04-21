@@ -1,0 +1,98 @@
+@import '../../styles/index.scss';
+.header-panel {
+  width: 100%;
+  .header-top {
+    background-color: color(head-top);
+    height: torem(28px);
+    .header-tips {
+      @include flex-between;
+      margin: 0 auto;
+      width: torem(980px);
+      h1 {
+        margin: 0 0 0 torem(16px);
+        @include text-small;
+        color: color(head-tips);
+      }
+      .header-interact {
+        position: relative;
+        height: torem(28px);
+        @include flex-center;
+        .header-icon {
+          width: auto;
+          height: torem(22px);
+        }
+        .header-number {
+          @include margin(left, small);
+          @include text-large;
+          color: color(head-tel);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .header-tabber {
+    @include border(bottom);
+    border-color: color(head-border);
+    background-color: color(head-tab);
+    .header-line {
+      @include flex-row;
+      margin: 0 auto;
+      width: torem(980px);
+      height: torem(50px);
+      .header-logo {
+        @include flex-center;
+        @include margin(right, large);
+        width: torem(128px);
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .ming-dong {
+          @include flex-column;
+          h1 {
+            @include title-h1;
+            margin: 0;
+            line-height: 30px;
+            color: color(gray-1);
+            transform: scale(1, 0.84);
+          }
+          span {
+            @include text-small;
+            color: color(gray-1);
+            transform: scale(0.82);
+          }
+        }
+      }
+      .header-tab {
+        @include flex-row;
+        .header-item {
+          @include flex-center;
+          a {
+            padding: 0 torem(14px);
+            @include text-middle;
+            white-space: nowrap;
+            color: color(head-name);
+            &:hover {
+              color: color(head-hover);
+            }
+          }
+        }
+        .item-active {
+          position: relative;
+          a {
+            color: color(head-hover);
+          }
+        }
+        .item-active::after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: torem(2px);
+          background-color: color(head-hover);
+        }
+      }
+    }
+  }
+}

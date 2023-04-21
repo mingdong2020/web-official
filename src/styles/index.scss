@@ -1,0 +1,10 @@
+@import './base.scss';
+@import './mixins';
+@import './variable';
+
+:root {
+  --head-top: #f5f5f5;
+  --head-tab: #ffffff;
+  --head-name: #141414;
+  --head-tips: #262626; 
+}

@@ -1,0 +1,202 @@
+@import '../../styles/index.scss';
+.approve-box {
+  position: relative;
+  width: 100%;
+  .approve-content {
+    @include margin-auto;
+    @include margin(top, large);
+    padding: torem(22px) 0;
+    width: torem(1004px);
+    overflow: hidden;
+    .content-title {
+      position: relative;
+      display: flex;
+      padding-left: torem(18px);
+      margin-left: torem(12px);
+      @include title-h5;
+      text-align: left;
+      color: color(head-hover);
+    }
+    .content-title::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      transform: translate(0, -50%);
+      width: torem(6px);
+      height: torem(6px);
+      background-color: color(head-hover);
+    }
+    .content-text {
+      @include flex-row;
+      .content-desc {
+        padding: torem(12px);
+        @include text-middle;
+        font-size: font(size-13);
+        line-height: torem(22px);
+        text-indent: 2em;
+      }
+      .content-range {
+        padding: torem(12px);
+        em {
+          font-size: font(size-13);
+          line-height: torem(22px);
+          @include text-middle;
+          color: color(head-hover);
+          font-weight: 500;
+        }
+        span {
+          font-size: font(size-13);
+          line-height: torem(22px);
+          @include text-middle;
+        }
+      }
+    }
+  }
+  .approve-tell {
+    padding: torem(22px) 0;
+    background: url('../../image/approve-tell.png') no-repeat;
+    background-size: 54% 100%;
+    background-position: right center;
+    background-color: color(gray-3);
+    .content-box {
+      @include flex-center;
+      @include margin-auto;
+      @include margin(top, large);
+      width: torem(1004px);
+      overflow: hidden;
+      .content-chip {
+        display: flex;
+        width: torem(480px);
+        @include flex-column;
+        padding: torem(12px);
+        .chip-title {
+          font-size: font(size-13);
+          line-height: torem(22px);
+          @include text-middle;
+          color: color(head-hover);
+          font-weight: 500;
+        }
+        .chip-text {
+          font-size: font(size-13);
+          line-height: torem(22px);
+          @include text-middle;
+        }
+      }
+      .content-circle {
+        display: flex;
+        width: torem(200px);
+        .content-image {
+          @include margin-auto;
+          border: torem(4px) solid color(gray-3);
+          border-radius: 50%;
+          .content-icon {
+            position: relative;
+            width: torem(128px);
+            height: torem(128px);
+            border-radius: 50%;
+            background-color: color(gray-1);
+          }
+          .content-check::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: '咨 询';
+            @include title-h1;
+            font-size: font(size-38);
+            margin-top: 0;
+            color: color(gray-1);
+            width: torem(128px);
+            height: torem(128px);
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.68);
+          }
+        }
+      }
+      .content-coor {
+        display: flex;
+        width: torem(400px);
+        @include flex-column;
+        padding: torem(12px);
+        .coor-title {
+          font-size: font(size-13);
+          line-height: torem(22px);
+          @include text-middle;
+          color: color(gray-1);
+          font-weight: 500;
+        }
+        .coor-text {
+          font-size: font(size-13);
+          line-height: torem(22px);
+          @include text-middle;
+          color: color(gray-1);
+        }
+      }
+    }
+  }
+  .variety-box {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include margin-auto;
+    margin-top: torem(68px);
+    margin-bottom: torem(68px);
+    width: torem(1004px);
+    .variety-item {
+      @include margin(top);
+      padding-left: torem(100px);
+      padding-right: torem(22px);
+      @include flex-column-center;
+      border: 1px solid color(gray-4);
+      border-radius: 3px;
+      overflow: hidden;
+      transition: border 0.05s;
+      .variety-name {
+        display: flex;
+        align-items: center;
+        @include margin(top, small);
+        width: torem(356px);
+        height: torem(108px);
+        @include text-small;
+      }
+    }
+    .variety-item:nth-child(1) {
+      background: url('../../image/approve-1.png') no-repeat;
+      background-size: torem(86px) auto;
+      background-position: left center;
+    }
+    .variety-item:nth-child(2) {
+      background: url('../../image/approve-2.png') no-repeat;
+      background-size: torem(86px) auto;
+      background-position: left center;
+    }
+    .variety-item:nth-child(3) {
+      background: url('../../image/approve-3.png') no-repeat;
+      background-size: torem(86px) auto;
+      background-position: left center;
+    }
+    .variety-item:nth-child(4) {
+      background: url('../../image/approve-4.png') no-repeat;
+      background-size: torem(86px) auto;
+      background-position: left center;
+    }
+    .variety-item:nth-child(5) {
+      background: url('../../image/approve-5.png') no-repeat;
+      background-size: torem(86px) auto;
+      background-position: left center;
+    }
+    .variety-item:nth-child(6) {
+      background: url('../../image/approve-6.png') no-repeat;
+      background-size: torem(86px) auto;
+      background-position: left center;
+    }
+    .variety-item:hover {
+      transform: translateY(-5px);
+      transition: ease all 0.3s;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+    }
+  }
+}

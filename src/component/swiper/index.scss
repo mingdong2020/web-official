@@ -1,0 +1,27 @@
+@import '../../styles/index.scss';
+.swiper-box {
+  position: relative;
+  @include flex-row;
+  overflow: hidden;
+  .swiper-item {
+    transition: margin 1.2s ease-in-out;
+    -webkit-transition: margin 1.2s ease-in-out;
+  }
+  .swiper-tab {
+    position: absolute;
+    left: 50%;
+    bottom: torem(16px);
+    transform: translate(-50%);
+    @include flex-row;
+    .swiper-list {
+      margin: 0 torem(2px);
+      width: torem(16px);
+      height: torem(6px);
+      background-color: color(gray-3);
+      border-radius: 3px;
+    }
+    .list-active {
+      background-color: color(red-7);
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../styles/index.scss';
+.papers-box {
+  position: relative;
+  width: 100%;
+  height: 375px;
+  background-color: #212629;
+  overflow: hidden;
+  .papers-name {
+    @include margin-auto;
+    @include margin(top, large);
+    @include margin(bottom);
+    width: torem(964px);
+    @include text-middle;
+    color: color(gray-5);
+  }
+  .papers-list {
+    @include flex-row;
+    flex-wrap: wrap;
+    @include margin-auto;
+    width: torem(988px);
+    .papers-item {
+      @include flex-between;
+      margin: torem(8px);
+      width: torem(229px);
+      height: torem(76px);
+      background-color: color(head-tab);
+      border: 1px solid color(head-tab);
+      .papers-art {
+        @include flex-column;
+        justify-content: space-between;
+        margin-left: torem(10px);
+        .papers-title {
+          @include text-small;
+          font-weight: weight(weight-heavy);
+          color: color(gray-3);
+        }
+        .papers-text {
+          margin-top: torem(3px);
+          @include text-small;
+          color: color(gray-5);
+        }
+      }
+      .papers-img {
+        margin-right: torem(10px);
+        width: torem(28px);
+        height: torem(28px);
+      }
+    }
+    .papers-item:hover, .papers-check {
+      border: 1px solid color(head-hover);
+      .papers-art {
+        .papers-title {
+          color: color(head-hover);
+        }
+        .papers-text {
+          color: color(head-hover);
+        }
+      }
+    }
+  }
+}

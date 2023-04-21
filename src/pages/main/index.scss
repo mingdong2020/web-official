@@ -1,0 +1,292 @@
+@import '../../styles/index.scss';
+.main-box {
+  h1 {
+    @include title-h1;
+    em {
+      color: color(red-7);
+      font-style: normal;
+    }
+  }
+  h5 {
+    @include title-h5;
+    @include margin(top);
+    color: color(gray-8);
+    font-weight: normal;
+    em {
+      color: color(red-7);
+      font-style: normal;
+    }
+  }
+  .main-query {
+    @include margin-auto;
+    @include margin(top);
+    padding: torem(14px) torem(14px) torem(12px) torem(14px);
+    width: torem(760px);
+    background-color: color(gray-4);
+    .query-form {
+      @include flex-row;
+      background-color: color(gray-1);
+      .query-item {
+        @include flex-middle;
+        position: relative;
+        width: torem(280px);
+        height: torem(46px);
+        input {
+          position: relative;
+          padding: torem(2px) torem(10px);
+          width: 100%;
+          @include text-middle;
+          background-color: color(gray-1);
+        }
+        input[type=number] {
+          @include border(left);
+        }
+        span {
+          position: absolute;
+          left: torem(10px);
+          bottom: torem(15px);
+          font-size: font(size-10);
+          color: color(red-7);
+          font-weight: weight(weight-normal);
+        }
+      }
+      .query-submit {
+        @include flex-center;
+        width: torem(200px);
+        height: torem(46px);
+        background-color: color(red-7);
+        .query-tel {
+          width: torem(16px);
+          height: torem(16px);
+        }
+        span {
+          @include margin(left, small);
+          @include text-middle;
+          color: color(gray-1);
+        }
+      }
+    }
+    .query-other {
+      @include flex-row;
+      @include margin(top);
+      padding: torem(14px);
+      background-color: color(gray-1);
+      .query-scroll {
+        flex: 6;
+        .query-title {
+          @include text-middle;
+          padding: torem(4px) 0;
+          em {
+            color: color(red-7);
+            font-style: normal;
+          }
+        }
+        .scroll-box {
+          width: 100%;
+          height: torem(101px);
+          overflow: hidden;
+          .scroll-list {
+            .scroll-item {
+              padding: torem(2px);
+              @include text-small;
+            }
+          }
+        }
+      }
+      .query-tool {
+        flex: 5;
+        .query-title {
+          @include text-middle;
+          padding: torem(4px) 0;
+        }
+        .tool-box {
+          @include flex-row;
+          @include margin(top);
+          padding: 0 0 0 torem(20px);
+          @include border(left);
+          .tool-item {
+            @include flex-column-center;
+            @include margin(right);
+            .tool-image {
+              width: torem(56px);
+              height: torem(56px);
+            }
+            span {
+              @include margin(top);
+              @include text-small;
+            }
+          }
+        }
+      }
+    }
+    .query-inform {
+      @include flex-between;
+      padding: torem(10px) 0 0 0;
+      .query-tips {
+        @include text-small;
+        em {
+          @include text-small;
+          color: color(red-7);
+          font-style: normal;
+        }
+      }
+    }
+  }
+  .main-advert {
+    @include margin(top, large);
+    width: 100%;
+    height: auto;
+  }
+  .main-advant {
+    h1 {
+      @include title-h1;
+    }
+    .main-tips {
+      @include margin(top);
+      @include text-middle;
+      color: color(gray-8);
+      text-align: center;
+    }
+    .advant-box {
+      @include flex-row;
+      @include margin-auto;
+      @include margin(top, large);
+      width: torem(788px);
+      .advant-item {
+        flex: 1;
+        @include margin(left, small);
+        border: 1px solid color(gray-4);
+        h3 {
+          @include margin(top);
+          font-size: font(size-18);
+          font-weight: weight(weight-heavy);
+          color: color(red-7);
+          text-align: center;
+        }
+        .advant-image {
+          @include margin(top, small);
+          @include flex-center;
+          .image-box {
+            border-radius: 3px;
+            overflow: hidden;
+          }
+        }
+        .advant-text {
+          padding: torem(12px);
+          @include text-small;
+        }
+      }
+      .advant-item:first-child {
+        margin: 0;
+      }
+      .advant-item:hover {
+        transform: translateY(-5px);
+        transition: ease all 0.3s;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+      }
+    }
+  }
+  .idea-box {
+    @include margin(top, large);
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    .idea-panel {
+      padding: torem(60px) 0;
+      width: 100%;
+      background: url('../../image/IdeaBg.png') no-repeat;
+      background-size: 100% 100%;
+      background-position: bottom center;
+      h1 {
+        @include title-h1;
+        margin: 0;
+      }
+      .idea-tabber {
+        @include flex-center;
+        margin: torem(58px) 0 0 0;
+        .idea-item {
+          position: relative;
+          padding: 0 torem(18px);
+        }
+        .idea-item::after {
+          position: absolute;
+          content: '';
+          bottom: torem(-8px);
+          left: 50%;
+          width: 0;
+          height: torem(4px);
+          border-radius: 3px;
+          transform: translate(-50%);
+          background-color: color(red-7);
+        }
+        .idea-active::after {
+          width: torem(38px);
+          transition: width 0.6s;
+        }
+      }
+      .idea-wind {
+        @include flex-between;
+        align-items: flex-start;
+        width: torem(720px);
+        @include margin-auto;
+        @include margin(top, large);
+        .idea-image {
+          flex: 5;
+          @include flex-center;
+          .image-box {
+            border-radius: 3px;
+            overflow: hidden;
+          }
+        }
+        .idea-text {
+          flex: 14;
+          @include flex-column;
+          @include margin(left);
+          h3 {
+            margin: 0;
+            font-size: font(size-18);
+            font-weight: weight(weight-heavy);
+            color: color(red-7);
+            text-align: left;
+          }
+          span {
+            @include margin-auto;
+            @include margin(top, small);
+            @include text-middle;
+          }
+        }
+      }
+    }
+  }
+  .coop-box {
+    @include margin(bottom, large);
+    overflow: hidden;
+    h1 {
+      @include title-h1;
+    }
+    .coop-panel {
+      @include flex-row;
+      flex-wrap: wrap;
+      @include margin-auto;
+      @include margin(top, large);
+      width: torem(784px);
+      background-color: color(gray-3);
+      @include border();
+      .coop-item {
+        width: torem(190px);
+        height: torem(190px);
+        @include margin(left, small);
+        @include margin(bottom, small);
+      }
+      .coop-item:nth-child(5) {
+        width: torem(388px);
+      }
+      .coop-item:first-child, .coop-item:nth-child(5) {
+        margin: 0;
+      }
+      .coop-item:nth-child(n + 5) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
