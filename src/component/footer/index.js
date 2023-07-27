@@ -191,14 +191,14 @@ export default class Footer extends React.Component {
           ]
         }
       ],
-      icpBei: '沪ICP备17000006号-1'
+      icpBei: '沪ICP备17000006号'
     }
   }
   componentDidMount() {
     const { companySite } = this.props
     if (companySite) {
       this.setState({
-        icpBei: '沪ICP备14004441号-5'
+        icpBei: '沪ICP备14004441号'
       })
     }
   }
