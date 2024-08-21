@@ -7,7 +7,7 @@ import {
   FinanceNav as Finance,
   ApproveNav as Approve,
   AccountNav as Account,
-  FiscalNav as Fiscal,
+  // FiscalNav as Fiscal,
   AboutNav as About,
 } from './navigate';
 
@@ -40,10 +40,10 @@ const router = [
     path: '/account/:acid?',
     component: () => <Account/>,
   },
-  {
-    path: '/fiscal',
-    component: () => <Fiscal/>,
-  },
+  // {
+  //   path: '/fiscal',
+  //   component: () => <Fiscal/>,
+  // },
   {
     path: '/about',
     component: () => <About/>,

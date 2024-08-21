@@ -1,135 +1,135 @@
-@import '../../styles/index.scss';
-.fiscal-box {
-  @include margin(top, large);
-  overflow: hidden;
-  .fiscal-head {
-    @include flex-center;
-    @include margin(top);
-    .fiscal-item {
-      width: torem(300px);
-      .fiscal-image {
-        width: torem(300px);
-      }
-      .fiscal-text {
-        padding: torem(6px) torem(12px) torem(14px) torem(12px);
-        background-color: #F0F4FD;
-        .fiscal-title {
-          @include flex-between;
-          h6 {
-            @include title-h6;
-            text-align: left;
-          }
-          em {
-            @include margin(top, small);
-            @include text-small;
-            color: color(red-7);
-          }
-          em::after {
-            content: '';
-            display: inline-block;
-            vertical-align: 1px;
-            width: 6px;
-            height: 6px;
-            border-left: 1px solid color(red-7);
-            border-bottom: 1px solid color(red-7);
-            transform: matrix(-.71,-.71,.71,-.71,0,0);
-            margin-left: 5px;
-          }
-        }
-        span {
-          display: inline-block;
-          @include margin(top, small);
-          @include text-small;
-        }
-      }
-    }
-    .fiscal-item:hover {
-      transform: translateY(-5px);
-      transition: ease all 0.3s;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
-    }
-    .fiscal-choose {
-      width: torem(320px);
-    }
-  }
-  .fiscal-body {
-    @include margin-auto;
-    @include margin(top, large);
-    @include flex-row;
-    width: torem(920px);
-    .fiscal-query {
-      @include margin(bottom, large);
-      position: relative;
-      display: flex;
-      flex: 1;
-      border: 1px solid color(gray-5);
-      .fiscal-contxt {
-        @include margin(top);
-        .fiscal-label {
-          @include margin(left, large);
-          @include margin(top);
-          label {
-            display: inline-block;
-            @include text-middle;
-            width: torem(118px);
-          }
-          input {
-            padding: torem(1px) 0;
-            @include text-middle;
-            width: torem(188px);
-            border-bottom: 1px solid color(gray-5);
-          }
-          .fiscal-select {
-            display: inline-block;
-            span {
-              padding: torem(2px) torem(4px);
-              @include margin(right);
-              @include text-small;
-            }
-            .fiscal-check {
-              color: color(gray-1);
-              background-color: color(red-7);
-            }
-          }
-        }
-        .fiscal-result {
-          @include margin(top);
-          @include margin(left, large);
-          @include text-middle;
-        }
-        .fiscal-submit {
-          @include margin(left, large);
-          @include margin(top);
-          @include margin(bottom);
-          input {
-            padding: torem(2px) 0;
-            width: torem(68px);
-            @include text-middle;
-            background-color: color(blue-6);
-            color: color(gray-1);
-          }
-        }
-        iframe {
-          display: none;
-        }
-      }
-    }
-    .fiscal-query::after {
-      position: absolute;
-      top: torem(-10px);
-      left: 1em;
-      content: '上海各园区年财政支持查询';
-      font-size: font(size-13);
-      font-weight: weight(weight-heavy);
-      color: color(gray-9);
-      background-color: color(gray-1);
-      padding: 0 1em;
-    }
-    .fiscal-query:last-child {
-      @include margin(left);
-    }
-    .fiscal-query:last-child::after {
-      content: '浙江舟山自贸区财政扶持';
-    }
-  }
-}
+// @import '../../styles/index.scss';
+// .fiscal-box {
+//   @include margin(top, large);
+//   overflow: hidden;
+//   .fiscal-head {
+//     @include flex-center;
+//     @include margin(top);
+//     .fiscal-item {
+//       width: torem(300px);
+//       .fiscal-image {
+//         width: torem(300px);
+//       }
+//       .fiscal-text {
+//         padding: torem(6px) torem(12px) torem(14px) torem(12px);
+//         background-color: #F0F4FD;
+//         .fiscal-title {
+//           @include flex-between;
+//           h6 {
+//             @include title-h6;
+//             text-align: left;
+//           }
+//           em {
+//             @include margin(top, small);
+//             @include text-small;
+//             color: color(red-7);
+//           }
+//           em::after {
+//             content: '';
+//             display: inline-block;
+//             vertical-align: 1px;
+//             width: 6px;
+//             height: 6px;
+//             border-left: 1px solid color(red-7);
+//             border-bottom: 1px solid color(red-7);
+//             transform: matrix(-.71,-.71,.71,-.71,0,0);
+//             margin-left: 5px;
+//           }
+//         }
+//         span {
+//           display: inline-block;
+//           @include margin(top, small);
+//           @include text-small;
+//         }
+//       }
+//     }
+//     .fiscal-item:hover {
+//       transform: translateY(-5px);
+//       transition: ease all 0.3s;
+//       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+//     }
+//     .fiscal-choose {
+//       width: torem(320px);
+//     }
+//   }
+//   .fiscal-body {
+//     @include margin-auto;
+//     @include margin(top, large);
+//     @include flex-row;
+//     width: torem(920px);
+//     .fiscal-query {
+//       @include margin(bottom, large);
+//       position: relative;
+//       display: flex;
+//       flex: 1;
+//       border: 1px solid color(gray-5);
+//       .fiscal-contxt {
+//         @include margin(top);
+//         .fiscal-label {
+//           @include margin(left, large);
+//           @include margin(top);
+//           label {
+//             display: inline-block;
+//             @include text-middle;
+//             width: torem(118px);
+//           }
+//           input {
+//             padding: torem(1px) 0;
+//             @include text-middle;
+//             width: torem(188px);
+//             border-bottom: 1px solid color(gray-5);
+//           }
+//           .fiscal-select {
+//             display: inline-block;
+//             span {
+//               padding: torem(2px) torem(4px);
+//               @include margin(right);
+//               @include text-small;
+//             }
+//             .fiscal-check {
+//               color: color(gray-1);
+//               background-color: color(red-7);
+//             }
+//           }
+//         }
+//         .fiscal-result {
+//           @include margin(top);
+//           @include margin(left, large);
+//           @include text-middle;
+//         }
+//         .fiscal-submit {
+//           @include margin(left, large);
+//           @include margin(top);
+//           @include margin(bottom);
+//           input {
+//             padding: torem(2px) 0;
+//             width: torem(68px);
+//             @include text-middle;
+//             background-color: color(blue-6);
+//             color: color(gray-1);
+//           }
+//         }
+//         iframe {
+//           display: none;
+//         }
+//       }
+//     }
+//     .fiscal-query::after {
+//       position: absolute;
+//       top: torem(-10px);
+//       left: 1em;
+//       content: '上海各园区年财政支持查询';
+//       font-size: font(size-13);
+//       font-weight: weight(weight-heavy);
+//       color: color(gray-9);
+//       background-color: color(gray-1);
+//       padding: 0 1em;
+//     }
+//     .fiscal-query:last-child {
+//       @include margin(left);
+//     }
+//     .fiscal-query:last-child::after {
+//       content: '浙江舟山自贸区财政扶持';
+//     }
+//   }
+// }

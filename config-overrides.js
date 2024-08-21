@@ -12,7 +12,7 @@ module.exports = (config, env) => {
         '/finance',
         '/approve/*/*',
         '/account/*',
-        '/fiscal',
+        // '/fiscal',
         '/about',
       ],
       staticDir: path.join(__dirname, 'build'),

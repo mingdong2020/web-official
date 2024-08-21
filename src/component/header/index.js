@@ -59,12 +59,12 @@ export default class Header extends React.Component {
           path: '/account',
           active: false
         },
-        {
-          id: 7,
-          name: '财政支持',
-          path: '/fiscal',
-          active: false
-        },
+        // {
+        //   id: 7,
+        //   name: '财政支持',
+        //   path: '/fiscal',
+        //   active: false
+        // },
         {
           id: 8,
           name: '关于我们',

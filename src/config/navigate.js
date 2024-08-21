@@ -11,7 +11,7 @@ const Regist = React.lazy(() => import('../pages/regist/index.js'));
 const Finance = React.lazy(() => import('../pages/finance/index.js'));
 const Approve = React.lazy(() => import('../pages/approve/index.js'));
 const Account = React.lazy(() => import('../pages/account/index.js'));
-const Fiscal = React.lazy(() => import('../pages/fiscal/index.js'));
+// const Fiscal = React.lazy(() => import('../pages/fiscal/index.js'));
 const About = React.lazy(() => import('../pages/about/index.js'));
 
 const NavProps = () => {
@@ -70,12 +70,12 @@ export function AccountNav() {
     <Account {...props}/>
   </NavMiddle> 
 }
-export function FiscalNav() {
-  const props = NavProps();
-  return <NavMiddle>
-    <Fiscal {...props}/>
-  </NavMiddle>
-}
+// export function FiscalNav() {
+//   const props = NavProps();
+//   return <NavMiddle>
+//     <Fiscal {...props}/>
+//   </NavMiddle>
+// }
 export function AboutNav() {
   const props = NavProps();
   return <NavMiddle>
